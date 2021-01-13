@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="assets/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>All-IN BAGEL</title>
+</head>
+
+<body id="top" class="bodyFont">
+    <!-- Div englobant le reste de la page pour la décaler quand la navbar s'etend -->
+    <div id="wtMain">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light" id="wtNavbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link wtNavbarLink" id="wtBagelNavbar" href="#bagel">BAGEL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link wtNavbarLink" href="#menu">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Lien Menu -->
+                            <a class="nav-link wtNavbarLink" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Lien About -->
+                            <a class="nav-link wtNavbarLink" id="wtContactNavBar" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                    <!-- Logo -->
+                    <span class="navbar-nav mx-auto" id="wtLogoNavbar">
+                        <a class="navbar-brand" href="#top" id="logo">ALL-IN<br>BAGEL</a>
+                    </span>
+                    <!-- Le même sans BR -->
+                    <span class="navbar-nav mx-auto wtLogoDisplayNone" id="wtLogoNavbarLittle">
+                        <a class="navbar-brand" href="#top" id="logoLittle">ALL-IN BAGEL</a>
+                    </span>
+                    <!-- Lien RS & Tel  -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link wtNavbarLink" href="https://www.facebook.com/AllInBagels/"
+                                target="_blank">
+                                <img src="assets/img/facebook.png" class="wtLogoTop" alt="Logo Facebook"
+                                    id="logoFacebookTop">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link wtNavbarLink" href="#">
+                                <img src="assets/img/INSTA.png" class="wtLogoTop" alt="Logo Instagram"
+                                    id="logoInstaTop">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link wtNavbarLink" href="http://www.twitter.com">
+                                <img src="assets/img/twitter.png" class="wtLogoTop" alt="Logo Twitter"
+                                    id="logoTwitterTop">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Carousel Transition Fade et interval de 3s -->
+        <section>
+            <div id="carousel" class="carousel slide carousel-fade" data-bs-interval="3000" data-bs-ride="carousel">
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active ndCarouTitle">
+                        <!-- Premiere image du carousel + caption -->
+                        <img src="assets/img/carousel1.png" class="d-block wtCarouselElements"
+                            alt="Premiere image caroussel">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="wtCarouselTitle mx-auto ">ALL-IN <br>BAGEL</h2>
+                        </div>
+                    </div>
+                    <!-- Seconde image du carousel + caption -->
+                    <div class="carousel-item ndCarouTitle">
+                        <img src="assets/img/carousel4.png" class="d-block wtCarouselElements"
+                            alt="seconde image Caroussel">
+                        <div class="carousel-caption d-none d-md-block ">
+                                <h2 class="wtCarouselTitle mx-auto ">ALL-IN <br>BAGEL</h2>
+                        </div>
+                    </div>
+                    <!-- troisieme image du carousel + Caption -->
+                    <div class="carousel-item ndCarouTitle">
+                        <img src="assets/img/carousel3.jpg" class="d-block wtCarouselElements"
+                            alt="Troisieme image Caroussel">
+                        <div class="carousel-caption d-none d-md-block">
+                                <h2 class="wtCarouselTitle mx-auto ">ALL-IN <br>BAGEL</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bouton pour changer de slide -->
+                <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </section>
+        <!-- Section Bagel du restaurant -->
+        <section class="ndBagel" id="bagel">
+            <div class="container justify-content-center mx-auto " data-aos="fade-up" data-aos-delay="200">
+                <div class="row ndPosRowBagel">
+                    <div class="col-md-6 d-flex justify-content-lg-center mx-auto my-auto pt-3 pb-3">
+                        <div class="ndContentImage" id="image1">
+                            <a><img src="./assets/img/bagel11.png" class="ndMiniatureMenu" data-bs-toggle="modal"
+                                    data-bs-target="#rondPoint" /></a>
+                            <div class="ndNormal">
+                                <div class="ndText"></div>
+                            </div>
+                            <div class="ndHover text-white" data-bs-toggle="modal" data-bs-target="#rondPoint">
+                                <div class="ndText mx-auto my-auto"><span>+ d'info</span></div>
+                            </div>
+                        </div>
+                        <div class="ndTexteMiniature ps-3 text-left">
+                            <h3 class="ndSizeTitlteBagel">ROND POINT</h3>
+                            <span>Cream Cheese <br /></span>
+                            <span>Salade<br /></span>
+                            <span>Bacon de dinde<br /></span>
+                            <span>Concombre<br /></span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 d-flex justify-content-lg-center mx-auto my-auto pt-3 pb-3">
+                        <div class="ndContentImage" id="image1">
+                            <a><img src="./assets/img/bagel2.jpg" class="ndMiniatureMenu" data-bs-toggle="modal"
+                                    data-bs-target="#jardinSuspendu" /></a>
+                            <div class="ndNormal">
+                                <div class="ndText"></div>
+                            </div>
+                            <div class="ndHover text-white" data-bs-toggle="modal" data-bs-target="#jardinSuspendu">
+                                <div class="ndText mx-auto my-auto"><span>+ d'info</span></div>
+                            </div>
+                        </div>
+                        <div class="ndTexteMiniature ps-3 text-left">
+                            <h3 class="ndSizeTitlteBagel">JARDIN <br />SUSPENDU</h3>
+                            <span>Cream Cheese <br /></span>
+                            <span>Roquette<br /></span>
+                            <span>Tomate<br /></span>
+                            <span>Mozzarella<br /></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ndPosRowBagel">
+                    <div class="col-md-6 d-flex justify-content-lg-center mx-auto my-auto pt-3 pb-3">
+                        <div class="ndContentImage text-left" id="image1">
+                            <a><img src="./assets/img/bagel3.jpg" class="ndMiniatureMenu" data-bs-toggle="modal"
+                                    data-bs-target="#port2000" /></a>
+                            <div class="ndNormal">
+                                <div class="ndText"></div>
+                            </div>
+                            <div class="ndHover text-white" data-bs-toggle="modal" data-bs-target="#port2000">
+                                <div class="ndText mx-auto my-auto"><span>+ d'info</span></div>
+                            </div>
+                        </div>
+                        <div class="ndTexteMiniature ps-3 text-left">
+                            <h3 class="ndSizeTitlteBagel">PORT 2000</h3>
+                            <span>Cream Cheese <br /></span>
+                            <span>Roquette<br /></span>
+                            <span>Saumon<br /></span>
+                            <span>Oeuf<br /></span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 d-flex justify-content-lg-center mx-auto my-auto pt-3 pb-3">
+                        <div class="ndContentImage" id="image1">
+                            <a><img src="./assets/img/bagel3.jpg" class="ndMiniatureMenu" data-bs-toggle="modal"
+                                    data-bs-target="#potYahourt" /></a>
+                            <div class="ndNormal">
+                                <div class="ndText"></div>
+                            </div>
+                            <div class="ndHover text-white" data-bs-toggle="modal" data-bs-target="#potYahourt">
+                                <div class="ndText mx-auto my-auto"><span>+ d'info</span></div>
+                            </div>
+                        </div>
+                        <div class="ndTexteMiniature ps-3 text-left">
+                            <h3 class="ndSizeTitlteBagel">POT DE <br /> YAHOURT</h3>
+                            <span>Cream Cheese <br /></span>
+                            <span>Roquette<br /></span>
+                            <span>Blanc de dinde<br /></span>
+                            <span>Oignons doux<br /></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ndPosRowBagel">
+                    <div class="col-md-6 d-flex justify-content-lg-center mx-auto my-auto pt-3 pb-3">
+                        <div class="ndContentImage text-left" id="image1">
+                            <a><img src="./assets/img/bagel3.jpg" class="ndMiniatureMenu" data-bs-toggle="modal"
+                                    data-bs-target="#grandParis" /></a>
+                            <div class="ndNormal">
+                                <div class="ndText"></div>
+                            </div>
+                            <div class="ndHover text-white" data-bs-toggle="modal" data-bs-target="#grandParis">
+                                <div class="ndText mx-auto my-auto"><span>+ d'info</span></div>
+                            </div>
+                        </div>
+                        <div class="ndTexteMiniature ps-3 text-left">
+                            <h3 class="ndSizeTitlteBagel">GRAND PARIS</h3>
+                            <span>Cream Cheese <br /></span>
+                            <span>Roquette<br /></span>
+                            <span>Saumon<br /></span>
+                            <span>Oeuf<br /></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 d-flex justify-content-lg-center mx-auto my-auto pt-3 pb-3">
+                        <div class="ndContentImage" id="image1">
+                            <a><img src="./assets/img/bagel11.png" class="ndMiniatureMenu" data-bs-toggle="modal"
+                                    data-bs-target="#bouDuMonde" /></a>
+                            <div class="ndNormal">
+                                <div class="ndText"></div>
+                            </div>
+                            <div class="ndHover text-white" data-bs-toggle="modal" data-bs-target="#bouDuMonde">
+                                <div class="ndText mx-auto my-auto"><span>+ d'info</span></div>
+                            </div>
+                        </div>
+                        <div class="ndTexteMiniature ps-3 text-left">
+                            <h3 class="ndSizeTitlteBagel">BOUT DU <br /> MONDE</h3>
+                            <span>Cream Cheese <br /></span>
+                            <span>Roquette<br /></span>
+                            <span>Bacon de dinde<br /></span>
+                            <span>Oignons doux<br /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Menu du restaurant -->
+        <section class="ndMenu text-center " id="menu">
+            <div class="row my-auto w-100 m-0 p-0">
+                <div class="col-12 col-lg-6 d-flex" id="ndImgMenuSalade" data-bs-toggle="modal"
+                    data-bs-target="#modalMenuSalade" data-aos="flip-left">
+                    <div class="container-xl ndSizeRowMenu d-flex" data-bs-toggle="modal"
+                        data-bs-target="#modalMenuSalade">
+                        <p class="mx-auto my-auto ndCenterTextMenu" data-bs-toggle="modal"
+                            data-bs-target="#modalMenuSalade">SALADES
+                            <br /><img src="assets/img/button_menu.png" class="ndButtonMenu rounded"></p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex" id="ndImgMenuSoupe" data-bs-toggle="modal"
+                    data-bs-target="#modalMenuSoupe" data-aos="flip-left">
+                    <div class="container ndSizeRowMenu d-flex" data-bs-toggle="modal" data-bs-target="#modalMenuSoupe">
+                        <p class="mx-auto my-auto ndCenterTextMenu" data-bs-toggle="modal"
+                            data-bs-target="#modalMenuSoupe">SOUPES
+                            <br /><img src="assets/img/button_menu.png" class="ndButtonMenu rounded"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-auto w-100 m-0 p-0">
+                <div class="col-12 col-lg-6 d-flex" id="ndImgMenuBoisson" data-bs-toggle="modal"
+                    data-bs-target="#modalMenuBoisson" data-aos="flip-left">
+                    <div class="container ndSizeRowMenu d-flex" data-bs-toggle="modal"
+                        data-bs-target="#modalMenuBoisson">
+                        <p class="mx-auto my-auto ndCenterTextMenu" data-bs-toggle="modal"
+                            data-bs-target="#modalMenuBoisson">BOISSONS
+                            <br /><img src="assets/img/button_menu.png" class="ndButtonMenu rounded"></p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex" id="ndImgMenuDessert" data-bs-toggle="modal"
+                    data-bs-target="#modalMenuDessert" data-aos="flip-left">
+                    <div class="container ndSizeRowMenu d-flex" data-bs-toggle="modal"
+                        data-bs-target="#modalMenuDessert">
+                        <p class="mx-auto my-auto ndCenterTextMenu" data-bs-toggle="modal"
+                            data-bs-target="#modalMenuDessert">DESSERTS
+                            <br /><img src="assets/img/button_menu.png" class="ndButtonMenu rounded"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section About du restaurant -->
+        <section class="ndSectionAbout" id="about">
+            <div class="container d-flex ndAbout">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img class="mx-auto" src="./assets/img/about2.png" width="100%" data-aos="zoom-in" />
+                    </div>
+                    <div class="col-md-7 mx-auto text-center ndAbout" data-aos="zoom-in">
+                        <p>ABOUT</p>
+                        <h3>NEW-YORK LE HAVRE</h3>
+                        <p class="mt-4" style="font-size:25px;">Après avoir fait ses études de cuisine à l'International
+                            Culinary Center de New-York le chef Patrice Virag a décidé de rentrer au Havre, sans oublier
+                            d'emporter avec lui, les Bagels, incontournables de la culture New-Yorkaise.</p>
+                        <p class="mt-4" style="font-size:25px;">All-IN BAGELS. Un concept simple de service traiteur et
+                            restauration rapide mais équilibrée associant produits locaux et services dédiés, le tout
+                            100%
+                            made in NORMANDIE.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <section class="ndSectionParallax ">
+            <div class="ndPosDivParallax ndColorParallax">
+                <div class="container mt-4 text-center" >
+                    <p>Pour trouver ALL-IN BAGEL, utiliser la carte ci-dessous.<br/>
+                        Notre équipe vous attend avec impatience.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="d-flex" data-aos="zoom-in">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.990291978668!2d0.13189591566238454!3d49.48469037935373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02e55aaaaaaab%3A0xa18a55ddc13dfc59!2sAll-in%20Bagels%20Le%20Havre!5e0!3m2!1sfr!2sfr!4v1610535967966!5m2!1sfr!2sfr"
+                        width="800" height="450" class="mx-auto" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <div class="ndPosDivParallax ndColorParallax">
+                <div class="container mt-4 text-center">
+                    <p>Attention en raison de la COVID-19, All-IN BAGEL vous accueil en boutique uniquement pour un retrait de commande.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <!-- Adresse -->
+                    <div class="col-md-4 col-sm-down-12 float-left wtFooterElements text-left">
+                        <p>
+                            Horaires : <br>
+                            Du Lundi au Vendredi : 08:00 - 18:00<br/>
+                            Samedi, Dimanche : fermé <br>
+                        </p>
+                    </div>
+                    <!-- RS -->
+                    <div class="col-md-4 col-sm-down-12 float-left wtFooterElements">
+                        Téléphone - 02 35 24 12 45 <br>
+                        Adresse - 16 <br>
+                        Boulevard Amiral Mouchez, 76600 <br>
+                        Le Havre
+                    </div>
+
+                    <!-- Formulaire de contact -->
+                    <div class="col-md-4 col-sm-12 float-left wtFooterElements text-center" id="contact">
+                        <span>
+                            <img src="assets/img/facebook1.png" class="wtIconBot" alt="icone facebook">
+                        </span>
+                        <span>
+                            <img src="assets/img/twitter1.png" class="wtIconBot" alt="icone twitter">
+                        </span>
+                        <span>
+                            <img src="assets/img/insta2.png" class="wtIconBot" alt="icone instagram">
+                        </span>
+                        <div> <button data-bs-toggle="modal" data-bs-target="#ndFormulaire" id="wtContactButton">Nous
+                                contacter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 wtFooterElements text-center">
+                        <hr>
+                        Copyright ©2021 All rights reserved | <a href="legalmention.html">Mentions
+                            Légales</a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Modal des bagels du restaurant -->
+        <section>
+            <div class="modal fade" id="bouDuMonde" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/Boutdumonde.png" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="jardinSuspendu" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/Jardinssuspendus.png" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="rondPoint" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/Rondpoint.png" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="grandParis" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/grandParis.png" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="port2000" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/port2000.png" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="potYahourt" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/potYahourt.png" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal des Menus du restaurant -->
+            <div class="modal fade" id="modalMenuSalade" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/menuSalade.png" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalMenuSoupe" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/menuSoupe.png" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalMenuBoisson" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/drink1.png" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalMenuDessert" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/img/dessert.png" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal du Formulaire de Contact -->
+            <div class="modal fade border-0" id="ndFormulaire" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg ">
+                    <div class="modal-content border-0" style="color: #28292D;">
+                        <div class="modal-header ndBgForContact border-0">
+                            <h2 class="modal-title mx-auto" id="exampleModalLabel">Formulaire de contact
+                            </h2>
+                            <button type="button" class="btn-close m-0" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body align-items-center ndBgForContact border-0">
+                            <form name="contact" id="ndContact">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control ndInputSelect" id="ndFormLastName"
+                                                placeholder="Nom">
+                                            <label for="floatingInput">Nom</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control ndInputSelect" id="ndFormFirstName"
+                                                placeholder="Prénom">
+                                            <label for="floatingInput">Prénom</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control ndInputSelect" id="ndFormMail"
+                                                placeholder="adresse mail">
+                                            <label for="floatingInput">Adresse mail</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div class="form-floating ">
+                                            <input type="text" class="form-control ndInputSelect" id="ndFormNumber"
+                                                placeholder="téléphone">
+                                            <label for="floatingInput">téléphone</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12 mb-3">
+                                        <textarea class="form-control ndInputSelect" placeholder="Votre demande"
+                                            id="ndTextArea" style="height: 150px;"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12 mb-3">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="ndFormObject"
+                                                aria-label="Objet de la demande">
+                                                <option value="Devis">Contact</option>
+                                                <option value="Réservation">Réservation</option>
+                                                <option value="Contact">Devis</option>
+                                            </select>
+                                            <label for="floatingSelect">Votre demande :</label>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="modal-footer ndBgForContact border-0">
+                            <button type="button" class="btn ndBgButton ndButtonRaz mt-4 mb-3 ndRaz">RAZ</button>
+                            <input type="submit" value="Envoyer" class="btn ndBgButton mt-4 mb-3" disabled="true"
+                                id="ndSendForm" /></div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="assets/script.js"></Script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

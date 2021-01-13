@@ -1,0 +1,516 @@
+
+@font-face {
+    font-family: 'mohaveregular';
+    src: url('./font/mohave-regular-webfont.woff2') format('woff2'),
+         url('./font/mohave-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fontTitle';
+    src: url('./font/fonttest-webfont.woff2') format('woff2'),
+         url('./font/fonttest-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-family: mohaveregular;
+    color: #28292D;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'fontTitle';
+    color:#fff;
+}
+
+.ndSizeTitlteBagel{
+    font-size:25px;
+}
+.containerMaster{
+    height: 100vh;
+}
+
+.ndTexteMiniature{
+    font-size:19px;
+    line-height: 1.3em;
+}
+
+
+.ndMiniatureMenu{
+    height: 144px;
+    width: 144px;
+    border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+  }
+
+  @media (min-width: 1200px){
+      .container{
+        max-width: 1140px;
+      }
+  }
+
+  .ndMiniatureMenu:hover{
+      opacity : 0.5;
+  }
+
+
+  .ndContentImage{
+      position: relative;
+  }
+
+
+  .ndPositionInfo{
+      left:0; 
+      right:0; 
+      top:40%; 
+      position: absolute;
+}
+
+   /********* Hover image et texte *******/
+/* Overlay */
+.ndContentImage .ndHover {
+    position: absolute;
+    left:0; 
+    right:0; 
+    top:40%; 
+    opacity: 0;
+    transition: .5s ease;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+   }
+
+   @media (max-width:992px){
+    .ndContentImage .ndHover {
+        position: absolute;
+        left:0; 
+        right:0; 
+        top:35%; 
+        opacity: 0;
+        transition: .5s ease;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+       }
+   }
+   /* Apparition overlay sur passage souris */
+   .ndContentImage:hover .ndHover {
+    opacity: 1;
+   }
+
+
+   .ndContentImage .ndNormal {
+    transition: .5s ease;
+   }
+   .ndContentImage:hover .ndNormal {
+    opacity: 0;
+   }
+
+   .ndContentImageHover{
+       opacity: 0.5;
+   }
+
+   .ndAbout{
+       padding-top: 50PX;
+       padding-bottom: 50PX;
+   }
+
+
+   .ndPosTextMenu{
+    position: absolute;
+    bottom:180px;
+    left:185px;
+   }
+
+   .ndPosTextMenu h4{
+       font-size: 60px;
+   }
+
+   @media (max-width:992px){
+    .ndPosTextMenu{
+        position: absolute;
+        bottom:75px;
+        left:109px;
+        
+       }
+       .ndPosTextMenu h4{
+        font-size: 25px;
+    }
+   }
+
+
+   .ndBagel{
+       background-color: #a48566;
+   }
+
+   .ndSectionAbout{
+    background-color:#5f715b;
+   }
+   
+   
+   #ndImgMenuSalade{
+    background: no-repeat center url("./img/salade.png");
+    background-size: cover;
+    max-width:100%;
+    height: 100%;
+}
+
+#ndImgMenuSoupe{
+    background: no-repeat center url("./img/soupe.png");
+    background-size: cover;
+    max-width:100%;
+    height: 100%;
+}
+
+#ndImgMenuBoisson{
+    background: no-repeat center url("./img/coffee.png");
+    background-size: cover;
+    max-width:100%;
+    height: 100%;
+}
+
+
+#ndImgMenuDessert{
+    background: no-repeat center url("./img/cookie.png");
+    background-size: cover;
+    max-width:100%;
+    height: 100%;
+}
+
+#ndImgMenuBoisson:hover, #ndImgMenuSoupe:hover, #ndImgMenuSalade:hover, #ndImgMenuDessert:hover{
+    opacity: 0.9;
+}
+
+
+.ndSizeRowMenu{
+    height: 450px;
+    color : white;
+    font-size:80px;
+    font-family: 'fontTitle';
+}
+
+@media (max-width:760px){
+    .ndSizeRowMenu{
+        font-size: 40px;
+    }
+}
+@media (max-width:760px){
+    .ndSizeRowMenu{
+        height: 300px;
+    }    
+   }
+
+.ndCenterTextMenu{
+    padding-top: 55px;
+}
+
+
+.ndButtonMenu{
+    width:202px;
+    height:50px;
+}
+
+
+#logo, #logoitle {
+    font-family: 'fontTitle';
+}
+#logo {
+    border : solid 2px #a48566;
+    text-decoration : none;
+    color : #a48566;
+    padding-left : 12px;
+    padding-right : 12px;
+}
+
+/* Logo centre Nav */
+#wtLogoNavbar {
+    text-align: center;
+}
+.navbar-toggler {
+    background-color : #a48566;
+}
+
+/*taille police caption */
+.ndCarouTitle{
+    margin-top:45px;
+}
+.wtCarouselTitle {
+    font-size: 95px;
+    border :rgb(255, 255, 255) 6px solid;
+    width:fit-content;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top : 40px;
+    padding-bottom : 40px;
+
+}
+
+/*centrage caption*/
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial
+}
+
+/* size carousel */
+.wtCarouselElements {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Media queries pour effacer le texte du carousel et l'adapté a la taille du periph */
+@media screen and (max-width:700px) {
+    .wtCarouselElements {
+        width: 100%;
+        height: auto;
+    }
+
+    #wtLogoNavbar {
+        display: none;
+    }
+}
+
+/* padding pour aerer le footer */
+footer {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+/* alignement footer */
+
+
+/* mise en forme lien footer */
+.wtRSLink {
+    text-decoration: none;
+    color: black;
+}
+
+/* mise en forme mention legales */
+.wtLegalMentionsPropName {
+    font-weight: bold;
+
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    white-space: nowrap;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #a48566;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #28292D;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.wtSidebarIcon {
+    height : 36px;
+    width : auto;
+    margin-left : -8px;
+}
+
+.icon-text {
+    vertical-align: middle;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 600px) {
+    .sidebar {
+        padding-top: 12px;
+    }
+
+    .sidebar a {
+        font-size: 14px;
+    }
+}
+
+
+.wtDisableNone {
+    display: none;
+    width: -1000px;
+}
+.wtDisableNoneTitles {
+    display:none;
+}
+
+#wtNavbar {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index:100000;
+    width:100%;
+}
+
+.wtNavbarLink {
+    text-decoration: none;
+    color: #a48566 !important;
+    margin-left : 35px;
+    margin-right : 35px;
+}
+.wtNavbarLink:hover{
+    color : #1b1822;
+}
+
+.navbar-toggler {
+    background-color : #a48566;
+    color : black;
+}
+
+#toggleIcon {
+    height : 19px;
+    width : 19px;
+}
+
+.wtLogoTop {
+    height: 56px;
+    width: auto;
+}
+
+.wtLogoTop:hover {
+    opacity: 0.5;
+}
+
+
+.wtIconBot {
+    height : 70px;
+    width : auto;
+}
+
+#wtImgBranding {
+    width : 100%;
+    height : auto;
+}
+
+#wtContactButton {
+    border : 2px solid #a48566;
+    color: #a48566;
+    background-color:rgb(255,255,255);
+    padding : 16px;
+}
+
+
+.ndBgForContact{
+    background-color: #a48566;
+}
+
+.ndBgButton{
+    background-color: #28292D;
+    color : #fff;
+}
+
+.ndButtonRaz{
+    width:80px;
+    height: 38px;
+    background-color: #ab572b;
+}
+
+.wtLogoTopReduce {
+    height : 36px;
+    width : auto;
+}
+
+#logoLittle {
+    text-decoration : none;
+    color : #a48566;
+}
+
+.wtLogoDisplayNone {
+    display : none;
+}
+
+.wtScrollNavbar {
+    height : 35px;
+}
+
+@media screen and (max-width: 768px) {
+    #btnNavbar {
+        padding: 4px 4px;
+        font-size: 15px;
+        border-radius: 8px;
+        color : black;
+    }
+    #wtLogoNavbar, #wtLogoNavbarLittle, #logoFacebookTop, #logoInstaTop, #logoTwitterTop {
+        display : none;
+    }
+    #wtBagelNavbar {
+        padding-top : 22px;
+    }
+    
+    #wtContactNavBar {
+        margin-bottom : -40px;
+    }
+
+    li {
+        padding-left : 35%;
+    }
+
+}
+
+.ndSectionParallax{
+    min-height: 100vh;
+    position: relative;
+    background-image: url("./img/Branding1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top:1px solid #5f715b;
+    border-bottom:1px solid #fff;
+}
+
+.ndPosDivParallax{
+    margin-top:150px;
+    margin-bottom: 100px;
+}
+
+div#contact {
+    margin-top: -21px;
+}
+
+.ndColorParallax{
+    background-color: #28292d;
+    color : #fff;
+    border: 1px solid #28292d;
+}
+
+.ndPosRowBagel{
+    padding-top:36px;
+    padding-bottom:36px;
+}
