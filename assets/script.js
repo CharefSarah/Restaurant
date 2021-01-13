@@ -100,11 +100,9 @@ $('.navbar-collapse a').click(function(){
 
 document.getElementById("ndFormMail").addEventListener("blur", function(){
     if(!ndFormMail.value.match(/^[\w\-\+]+(\.[\w\-]+)*@[\w\-]+(\.[\w\-]+)*\.[\w\-]{2,4}$/)){
-        console.log("ne corresponde pas");
         ndFormMail.classList.add("border-danger");
         ndFormMail.classList.add("border-4");
     }else{
-        console.log(" corresponde ");
         ndFormMail.classList.remove("border-danger");
         ndFormMail.classList.remove("border-4");
     };
