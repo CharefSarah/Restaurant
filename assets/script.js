@@ -16,7 +16,7 @@ $(document).on('click', '.ndRaz', function () {
 });
 
 
-// Fonction pour faire apparaitre la sidebar en scrollant 
+// Taille navbar scroll -----
 var up = false;
 var newscroll;
 
@@ -47,6 +47,7 @@ $(window).scroll(function () {
             $('#logoInstaTop').removeClass("wtLogoTopReduce");
             $('#logoTwitterTop').removeClass("wtLogoTopReduce");
             up = !up;
+            
         } else {
             
         }
