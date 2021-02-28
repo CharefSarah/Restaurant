@@ -530,3 +530,11 @@ div#contact {
 #mentionLegalLink {
     color : black;
 }
+
+@media screen and (max-width:760px)
+{
+    #ndFormulaire {
+        margin-top : 35px;
+        max-height : 100%;
+    }
+}
